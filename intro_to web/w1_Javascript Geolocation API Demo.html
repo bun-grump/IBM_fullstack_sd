@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0149)https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/demos/geo-location-demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">  
+<title>Javascript Geolocation API Demo</title>  
+<script>  
+    var output = document.getElementById("output");  
+    function getlocation() {  
+        if(navigator.geolocation){  
+            navigator.geolocation.getCurrentPosition(displayPosition)  
+          }  
+        else  
+        {  
+             alert("Your browser does not support Geolocation API.")  
+         }
+          }  
+       
+     function displayPosition(position){  
+       var output = "<br>Your current location details<br>" + "Latitude: " + position.coords.latitude + "<br>" + "Longitude: " +    position.coords.longitude;  
+       document.getElementById("output").innerHTML = output;
+       var mapurl = "https://www.google.com/maps/@" + position.coords.latitude + "," + position.coords.longitude + ",14z";
+       document.getElementById("mapurl").innerHTML =  "<a href='" + mapurl +"' target='_blank'> Click here to see your location on the map.</a>";
+
+     }  
+</script>  
+</head>  
+<body data-new-gr-c-s-check-loaded="14.1166.0" data-gr-ext-installed="">
+<div align="center">
+
+<div style="font-family:sans-serif;background-color:white;width:50%;border:1px solid">  
+  
+  <h1>Find  Your Location</h1>
+  
+    HTML5 offers some cool features.<br> One of them is the geolocation API.<br> This allows anyone to easily find out their current location(lattitude and longitude).<br>
+  Try it out here.<br><br>  
+  
+<button style="background-color:skyblue;" onclick="getlocation()"><h2>Show my location</h2></button><br>
+<span id="output"></span><br><br>
+<span id="mapurl"></span><br><br>
+
+
+</div>
+
+</div>
+<a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/demos/demo1-instructions.md.html">Back</a>
+  
+ 
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
