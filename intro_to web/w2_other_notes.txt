@@ -1,0 +1,7 @@
+
+
+# js fiddle to play with HTML live
+https://jsfiddle.net/u7oxzgmj/13/
+
+# browser support tables
+https://caniuse.com/?search=date%20and%20time%20input%20types
