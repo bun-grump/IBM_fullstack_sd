@@ -5,3 +5,6 @@ https://jsfiddle.net/u7oxzgmj/13/
 
 # browser support tables
 https://caniuse.com/?search=date%20and%20time%20input%20types
+
+# code validation
+https://validator.w3.org/#validate_by_uri
