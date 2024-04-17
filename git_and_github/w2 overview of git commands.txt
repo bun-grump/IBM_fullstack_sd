@@ -1,0 +1,47 @@
+# first make a new directory
+mkdir MyRepository
+
+# navigate to the directory
+cd My Repository
+
+# New repository
+git init
+
+# add new file to staging area
+git add index.html
+# add all new and changed files
+git add .
+
+# commit changes
+git commit -m "created a new HTML file"
+
+# display change log
+git log
+
+# create a new branch for the new changes
+git branch code_list
+
+# switch to the newly created branch
+git checkout code_list
+
+# push the new changes to staging area in the new branch
+git add index.html
+
+# commit changes
+git commit -m "updated index.html file in branch"
+
+# browse the commit log
+git log
+
+# view status of all changes
+git status
+
+# merge the feature branch to the main branch
+git checkout main
+git merge code_list
+
+
+
+
+
+
