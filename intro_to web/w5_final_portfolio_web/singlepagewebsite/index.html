@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bunny Binky - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Bunny Binky
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            jdoe@jeemail.com
+          </div>
+          <div style="clear: both"></div>
+          <div class="contact_info">
+            <img
+              src="html_finalprojimages/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img
+          src="html_finalprojimages/bunny_binky_headshot.png"
+          class="profile_image"
+        />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Bunny Binky!
+          <img src="html_finalprojimages/waving-hand.png" width="60px" />
+        </h1>
+        <p>
+          I'm Bunny, and I've been honing my gardening, planting, and farming
+          skills for the past five years. In my front yard, I manage a small
+          garden that features over eight different kinds of plants. Moving to
+          the backyard, I've set up a tiny farm where I grow bok choy, carrots,
+          sweet potatoes, and more. Indoors, I take care of a diverse collection
+          of over 30 plants, ensuring they thrive in their environment. Not
+          stopping there, I also offer my plant-sitting services to the
+          community, spreading my love for plants and helping others nurture
+          their green companions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/flower.png" />
+          <h6>Flowers</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/vegetables.png" />
+          <h6>Vegetables</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/succulents.png" />
+          <h6>Succulents</h6>
+          <p>5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/herb.png" />
+          <h6>Herbs</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/fern.png" />
+          <h6>Ferns</h6>
+          <p>3 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Rooftop Garden Installation</h3>
+          <ul>
+            <li>
+              Installing rooftop gardens on urban buildings to maximize green
+              space, reduce stormwater runoff, improve air quality, and provide
+              opportunities for urban agriculture and community engagement.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>School Garden Program</h3>
+          <ul>
+            <li>
+              Establishing gardens at local schools to provide students with
+              hands-on learning opportunities in gardening, environmental
+              science, and healthy eating.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Community Garden Revitalization</h3>
+          <ul>
+            <li>
+              Transforming a neglected community garden into a vibrant space for
+              residents to grow produce and foster community bonds through
+              gardening and educational workshops.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bunny's expert care transformed my neglected garden into a lush oasis.
+          Her plant sitting service is a lifesaver when I'm away. Highly
+          recommend for anyone in need of green thumb magic!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bunny's gardening workshops are both informative and inspiring. Her
+          passion for plants is contagious, and her personalized advice has
+          helped me become a more confident gardener. A true green guru!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Bunny's dedication to plants is unmatched. She's turned my black thumb
+          into a green one with her expert guidance and encouragement. From
+          indoor plants to backyard gardens, Bunny is the go-to person for all
+          things green.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/thankyou.jpg" />
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
