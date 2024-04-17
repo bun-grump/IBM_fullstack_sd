@@ -20,6 +20,10 @@ git log
 
 # create a new branch for the new changes
 git branch code_list
+# display all branches
+git branch
+# delete a branch
+git brand -d code_list
 
 # switch to the newly created branch
 git checkout code_list
