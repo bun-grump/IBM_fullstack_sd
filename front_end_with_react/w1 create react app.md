@@ -19,3 +19,11 @@ cd myreactapp
 npm install
 
 npm run dev
+
+# install bootstrap
+npm i boostrap@5.2.3
+
+# then import on main.tsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+# get code template from https://getbootstrap.com/
